@@ -1,0 +1,18 @@
+[
+  { 
+    "title" : "1.1.1.1",
+    "prom" : "http://127.0.0.1:9090",
+    "query" : "avg(probe_icmp_duration_seconds{phase='rtt',instance='1.1.1.1'}*1000)",
+    "unit" : "ms",
+    "warn" : 50,
+    "error" : 1000
+  },
+  { 
+    "title" : "8.8.8.8",
+    "prom" : "http://127.0.0.1:9090",
+    "query" : "avg(probe_icmp_duration_seconds{phase='rtt',instance='8.8.8.8'}*1000)",
+    "unit" : "ms",
+    "warn" : 50,
+    "error" : 1000
+  }
+]
